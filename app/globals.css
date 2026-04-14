@@ -254,7 +254,16 @@ input {
 
 .page-intro h1,
 .section-block h2 {
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-size: clamp(1.9rem, 4.2vw, 3.8rem);
+}
+
+.editorial-card h3,
+.project-preview-card h3,
+.experience-entry h2,
+.project-page-card h2,
+.contact-card-large h2,
+.timeline-card h2 {
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
 }
 
 .page-intro-copy,
@@ -582,6 +591,16 @@ input {
 .text-link {
   min-height: 44px;
   margin-top: 10px;
+}
+
+.project-link {
+  background: linear-gradient(135deg, rgba(105, 229, 255, 0.96), rgba(114, 168, 255, 0.92));
+  color: #071019;
+  border-color: rgba(105, 229, 255, 0.38);
+}
+
+.project-link:hover {
+  border-color: rgba(141, 245, 199, 0.42);
 }
 
 .social-icon-link {

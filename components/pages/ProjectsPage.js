@@ -26,7 +26,12 @@ export default function ProjectsPage() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <a href={project.href} className="text-link" target="_blank" rel="noreferrer">
+            <a
+              href={project.href}
+              className="text-link project-link"
+              target="_blank"
+              rel="noreferrer"
+            >
               View GitHub
             </a>
           </Reveal>
