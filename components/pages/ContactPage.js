@@ -62,18 +62,27 @@ export default function ContactPage() {
       <PageIntro
         label="Contact"
         title="Direct contact details for recruiters, hiring managers, and collaborators."
+        className="contact-page-intro"
       />
 
       <div className="contact-grid">
         {primaryContacts.map((item, index) => (
-          <Reveal className="contact-card-large" key={item.label} delay={index * 0.06}>
+          <Reveal
+            className={`contact-card-large ${item.label === "Email" ? "contact-card-email" : ""}`}
+            key={item.label}
+            delay={index * 0.06}
+          >
             <p className="mini-label">{item.label}</p>
-            <h2>{item.value}</h2>
+            {item.label === "Email" ? (
+              <p className="contact-email-value">{item.value}</p>
+            ) : (
+              <h2>{item.value}</h2>
+            )}
             {item.label === "Email" ? (
               <>
                 <button
                   type="button"
-                  className="text-link"
+                  className="text-link contact-email-action"
                   onClick={() => handleEmailClick(item.value)}
                 >
                   Reach Out
