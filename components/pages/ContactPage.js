@@ -61,7 +61,7 @@ export default function ContactPage() {
     <div className="page-stack">
       <PageIntro
         label="Contact"
-        title="Direct contact details for recruiters, hiring managers, and collaborators."
+        title="Hiring AI talent? You just found it."
         className="contact-page-intro"
       />
 
