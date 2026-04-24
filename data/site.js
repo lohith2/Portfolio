@@ -200,7 +200,7 @@ export const projects = [
     description:
       "An autonomous incident investigation platform built with a TypeScript MCP server, Python, LangGraph, AWS Bedrock, Pinecone, and React for incident analysis and postmortem generation.",
     outcome:
-      "Eliminated manual incident investigation across 85 plus incidents and 140 plus failure patterns through a 19-tool MCP system and self-improving multi-model RAG pipeline.",
+      "Eliminated manual incident investigation across 90 plus incidents and 145 plus failure patterns through a 19-tool MCP system and self-improving multi-model RAG pipeline.",
     stack: ["TypeScript", "Python", "LangGraph", "AWS Bedrock", "Pinecone", "React"],
     href: "https://github.com/lohith2/Incident-Response-MCP",
   },
